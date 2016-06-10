@@ -1,5 +1,5 @@
 var colors = ['progress1', 'progress2', 'progress3'];
-var buttons = ['minusTwentyFive', 'minusTen', 'plusTen', 'plusTwentyFive'];
+var buttons = ['MinusTwentyFive', 'MinusTen', 'PlusTen', 'PlusTwentyFive'];
 
 var ractive = new Ractive({
     el: '.container',
