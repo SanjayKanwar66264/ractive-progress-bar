@@ -35,16 +35,16 @@ function changeProgressBarValue() {
 }
 
 ractive.on({
-    minusTwentyFive: function () {
+    MinusTwentyFive: function () {
         changeProgressBarValue();
     },
-    minusTen: function () {
+    MinusTen: function () {
         changeProgressBarValue();
     },
-    plusTen: function () {
+    PlusTen: function () {
         changeProgressBarValue();
     },
-    plusTwentyFive: function () {
+    PlusTwentyFive: function () {
         changeProgressBarValue();
     }
 });
