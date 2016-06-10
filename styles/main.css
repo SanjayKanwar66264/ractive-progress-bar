@@ -1,0 +1,9 @@
+progress {
+    border-radius: 9px;
+    width: 500px;
+    margin-bottom: auto;
+    background-color: rebeccapurple;
+}
+.container{
+    margin-top: 50px;
+}
