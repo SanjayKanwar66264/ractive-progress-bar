@@ -16,16 +16,16 @@ function changeProgressBarValue() {
     var e = document.getElementById("progessBarType");
     var strUser = e.options[e.selectedIndex].value;
     switch (event.target.innerHTML) {
-        case"minusTwentyFive":
+        case"MinusTwentyFive":
             document.getElementById(strUser).value -= 25;
             break;
-        case"minusTen":
+        case"MinusTen":
             document.getElementById(strUser).value -= 10;
             break;
-        case"plusTen":
+        case"PlusTen":
             document.getElementById(strUser).value += 10;
             break;
-        case"plusTwentyFive":
+        case"PlusTwentyFive":
             document.getElementById(strUser).value += 25;
             break;
         default :
