@@ -14,7 +14,6 @@
 <ul class="list-group">
     {{#each progressList}}
         <li class="list-group-item">
-            <p  value={{progress}}>{{this}}</p>
             <progress  id= {{this}} value={{progress}}  max="100">{{progress}}</progress>
         </li>
     {{/each}}
