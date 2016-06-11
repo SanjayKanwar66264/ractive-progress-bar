@@ -1,9 +1,24 @@
+
+.container{
+    margin-top: 50px;
+}
+
+
 progress {
     border-radius: 9px;
     width: 500px;
     margin-bottom: auto;
     background-color: rebeccapurple;
 }
-.container{
-    margin-top: 50px;
+
+/*Background color of the progress bar*/
+progress::-webkit-progress-bar { background: grey; }
+
+/*background color of the progress*/
+progress::-webkit-progress-value { background: #0063a6; }
+
+
+p[value]:after {
+    content: attr(value) '%';
+    position: absolute; right:0;
 }
