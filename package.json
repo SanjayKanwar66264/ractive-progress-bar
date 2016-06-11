@@ -1,0 +1,21 @@
+/*This is added in order to deploy this app to Heroku*/
+
+{
+  "name": "ractive-progressbar",
+  "version": "1.0.0",
+  "description": "Ractive Progress bar",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanjayKanwar66264/ractive-progress-bar.git"
+  },
+  "author": "SanjayKanwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanjayKanwar66264/ractive-progress-bar/issues"
+  },
+  "homepage": "https://github.com/SanjayKanwar66264/ractive-progress-bar#readme"
+}
