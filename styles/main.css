@@ -8,17 +8,19 @@ progress {
     border-radius: 9px;
     width: 500px;
     margin-bottom: auto;
-    background-color: rebeccapurple;
 }
 
 /*Background color of the progress bar*/
 progress::-webkit-progress-bar { background: grey; }
 
 /*background color of the progress*/
-progress::-webkit-progress-value { background: #0063a6; }
+progress::-webkit-progress-value { background: green; }
 
-
-p[value]:after {
-    content: attr(value) '%';
-    position: absolute; right:700px;
+progress[value^="9"]::-webkit-progress-value{
+    background-color: yellow;
 }
+progress[value^="1"]::-webkit-progress-value{
+    background-color: red;
+}
+
+

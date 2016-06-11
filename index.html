@@ -10,7 +10,6 @@
 <body>
 <div class='container'></div>
 <script id='template' type='text/ractive'>
-
 <ul class="list-group">
     {{#each progressList}}
         <li class="list-group-item">
@@ -18,7 +17,6 @@
         </li>
     {{/each}}
 </ul>
-
 <select class="selectpicker" id="progessBarType" value={{selectedOption}}>
       {{#each progressList}}
         <option >{{this}}</option>
