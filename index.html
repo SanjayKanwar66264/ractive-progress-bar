@@ -10,10 +10,16 @@
 <body>
 <div class='container'></div>
 <script id='template' type='text/ractive'>
-<ul class="list-group">
+<ul class="list-unstyled">
     {{#each progressList}}
-        <li class="list-group-item">
-            <progress  id= {{this}} value={{progress}}  max="100">{{progress}}</progress>
+        <li>
+        {{#this == selectedOption}}
+          <div class="selectedRow">  <progress  id= {{this }} value={{progress}}  max="100">{{progress}}</progress></div>
+        {{/this == selectedOption}}
+         {{^this == selectedOption}}
+            <progress  id= {{this }} value={{progress}}  max="100">{{progress}}</progress>
+        {{/this == selectedOption}}
+
         </li>
     {{/each}}
 </ul>
@@ -27,6 +33,7 @@
     <button class="{{this == "MinusTwentyFive" || this == "MinusTen"     ? "btn btn-danger" : "btn btn-primary"}}"
     on-click='{{this}}' style="margin:2px">{{this}}</button>
 {{/each}}
+
 </script>
 <script src='lib/js/reactive.min.js'></script>
 <script src="js/progress_bar.js">

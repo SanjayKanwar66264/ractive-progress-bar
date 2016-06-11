@@ -5,9 +5,16 @@
 
 
 progress {
-    border-radius: 9px;
+    border-radius: 19px;
     width: 500px;
-    margin-bottom: auto;
+    margin: 10px;
+    height: 20px;
+}
+
+.selectedRow{
+    background: none repeat scroll 0 0 yellow;
+    width: 530px;
+
 }
 
 /*Background color of the progress bar*/
@@ -17,7 +24,7 @@ progress::-webkit-progress-bar { background: grey; }
 progress::-webkit-progress-value { background: green; }
 
 progress[value^="9"]::-webkit-progress-value{
-    background-color: yellow;
+    background-color: blue;
 }
 progress[value^="1"]::-webkit-progress-value{
     background-color: red;
