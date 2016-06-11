@@ -12,17 +12,16 @@
 <script id='template' type='text/ractive'>
 
 <ul class="list-group">
-    {{#each progessList}}
+    {{#each progressList}}
         <li class="list-group-item">
-            <p  value = {{progress}} >{{this}}</p>
+            <p  value={{progress}}>{{this}}</p>
             <progress  id= {{this}} value={{progress}}  max="100">{{progress}}</progress>
         </li>
     {{/each}}
 </ul>
 
-<p>The selected colour is <span style='color: {{selectedOption}};'>{{progress}}</span>.</p>
 <select class="selectpicker" id="progessBarType" value={{selectedOption}}>
-      {{#each colors}}
+      {{#each progressList}}
         <option >{{this}}</option>
     {{/each}}
 </select>

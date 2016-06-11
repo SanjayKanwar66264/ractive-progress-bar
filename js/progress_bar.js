@@ -1,12 +1,12 @@
-var progessList = ['progress1', 'progress2', 'progress3'];
+var progressList = ['progress1', 'progress2', 'progress3'];
 var buttons = ['MinusTwentyFive', 'MinusTen', 'PlusTen', 'PlusTwentyFive'];
 
 var ractive = new Ractive({
     el: '.container',
     template: '#template',
     data: {
-        progessList: progessList,
-        selectedOption: progessList[0],
+        progressList: progressList,
+        selectedOption: progressList[0],
         buttons: buttons,
         progress: 35
     }
