@@ -1,12 +1,12 @@
-var colors = ['progress1', 'progress2', 'progress3'];
+var progessList = ['progress1', 'progress2', 'progress3'];
 var buttons = ['MinusTwentyFive', 'MinusTen', 'PlusTen', 'PlusTwentyFive'];
 
 var ractive = new Ractive({
     el: '.container',
     template: '#template',
     data: {
-        colors: colors,
-        color: colors[0],
+        progessList: progessList,
+        selectedOption: progessList[0],
         buttons: buttons,
         progress: 35
     }
@@ -30,7 +30,6 @@ function changeProgressBarValue() {
             break;
         default :
             break;
-
     }
 }
 
@@ -48,3 +47,5 @@ ractive.on({
         changeProgressBarValue();
     }
 });
+
+

@@ -20,5 +20,5 @@ progress::-webkit-progress-value { background: #0063a6; }
 
 p[value]:after {
     content: attr(value) '%';
-    position: absolute; right:0;
+    position: absolute; right:700px;
 }
