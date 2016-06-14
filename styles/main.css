@@ -3,7 +3,9 @@
     margin-top: 50px;
 }
 
-
+.progressPercentage{
+    margin-left: 220px;
+}
 progress {
     border-radius: 19px;
     width: 500px;
